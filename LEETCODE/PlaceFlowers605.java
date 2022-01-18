@@ -6,7 +6,7 @@ means not empty, and an integer n, return if n new flowers can be
 planted in the flowerbed without violating the no-adjacent-flowers rule.
 */
 
-public class PlaceFlowers {
+public class PlaceFlowers605 {
 
     static boolean canPlaceFlowers(int[] flowerbed, int n) {
         int count = 0, flower = 0, i = 0;
