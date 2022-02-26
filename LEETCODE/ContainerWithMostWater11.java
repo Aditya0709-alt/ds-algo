@@ -34,3 +34,40 @@ public class Solution
         }
         return ans;
     }
+    
+ /*
+ Optimized solution -> We use two pointers left and right and store the smaller of heights. 
+ We calculate area and store the maximum of area at every iteration. 
+ If the left height is greater, increment the right pointer and vice versa.
+ We do this until my left pointer is not greater than my right pointer.
+ 
+ Time Complexity: O(n) as only a single while loop is used
+ Space Complexity: O(1) as no extra arrays are required
+ */
+
+class Solution {
+    static int max(int a, int b){
+        return (a > b) ? a : b;
+    }
+    
+    static int min (int a, int b){
+        return (a < b) ? a : b;
+    }
+    
+    static int maxArea(int [] height){
+        int l = 0, r = height.length-1;
+        int area = 0;
+        while(l < r){
+            int small = min(height[l], height[r]);
+            area = max(area,small*(r-l));
+            
+            if(height[l] < height[r]){
+                l++;
+            } else {
+                r--;
+            }        
+        }
+        return area;
+    }
+}
+    
