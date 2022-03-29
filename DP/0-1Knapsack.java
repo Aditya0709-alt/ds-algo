@@ -18,6 +18,7 @@ static int knapsack(int [] wt, int [] val, int W, int n){
             return knapsack(wt,val,W,n-1);
         
     }
+// Bottom-up approach
 
 static int max(int a, int b){
         return (a > b) ? a : b;
