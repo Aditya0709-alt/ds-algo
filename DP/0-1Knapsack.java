@@ -19,6 +19,9 @@ static int knapsack(int [] wt, int [] val, int W, int n){
         
     }
 // Bottom-up approach
+// It is one of the most preferable methods in dynamic programming. 
+// It is faster than the memoization method as it doesn't involve any recursive calls. 
+// In this method, we have an array/matrix and we start from the first cell and move down filling entries in each cell one by one.
 
 static int max(int a, int b){
         return (a > b) ? a : b;
