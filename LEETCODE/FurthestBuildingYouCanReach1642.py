@@ -1,5 +1,9 @@
 
-
+'''
+To solve this question we need to maintain priority queues (heap) for ladders.
+Since we can climb any height using ladder, therefore, we will save bricks by 
+climbing the maximun height by ladders and remaining by bricks.
+'''
 
 
 
