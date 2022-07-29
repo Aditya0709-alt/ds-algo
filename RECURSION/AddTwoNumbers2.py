@@ -25,6 +25,6 @@ class Solution:
             copyNode.next = newNode
             copyNode = newNode
             
-            sum= int(sum/10)
+            sum = sum // 10
             
         return resNode.next
