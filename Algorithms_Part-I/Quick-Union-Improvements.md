@@ -95,7 +95,7 @@ public class WeightedQuickUnion {
   }
 ```
 
-|            Algorithm           | Running Time |
+|            Algorithm           | Worst-Case Time |
 |:------------------------------:|--------------|
 |           quick find           |      MN      |
 |           quick union          |      MN      |
