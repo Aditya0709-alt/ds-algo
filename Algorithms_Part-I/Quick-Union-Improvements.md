@@ -46,4 +46,4 @@ public class WeightedQuickUnion {
 - Find - Takes time proportional to depth of p and q
 - Union - Consntant time, O(1)
 
-~ Running time is O(log(N))~
+**Running time is O(log(N))**
