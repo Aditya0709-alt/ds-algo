@@ -95,3 +95,10 @@ public class WeightedQuickUnion {
   }
 ```
 
+|            Algorithm           | Running Time |
+|:------------------------------:|--------------|
+|           quick find           |      MN      |
+|           quick union          |      MN      |
+|           weighted QU          |  N + M log N |
+|      QU + path compression     |  N + M log N |
+| weighted QU + path compression | N + M log* N |
