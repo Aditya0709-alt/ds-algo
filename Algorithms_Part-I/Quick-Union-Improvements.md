@@ -1,6 +1,6 @@
 ### Improvement-1
 
-##### Weighted quick-union / Union By Rank
+#### Weighted quick-union / Union By Rank
 
 - Modify quick-union to avoid tall trees
 - Keep track of size of each tree
@@ -52,7 +52,7 @@ public class WeightedQuickUnion {
 
 ### Improvement-2
 
-##### Path compression
+#### Path compression
 - Just after computing the root of p, set the id of each examined root to point to that root
 
 ```java
