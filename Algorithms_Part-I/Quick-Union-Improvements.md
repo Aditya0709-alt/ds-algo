@@ -95,6 +95,8 @@ public class WeightedQuickUnion {
   }
 ```
 
+**M union-find operations on a set of N objects**
+
 |            Algorithm           | Worst-Case Time |
 |:------------------------------:|--------------|
 |           quick find           |      MN      |
