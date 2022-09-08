@@ -6,10 +6,10 @@
 - Keep track of size of each tree
 - Balance by linking root of smaller tree to root of larger tree (union by rank or height)
 
-```
+```java
 public class WeightedQuickUnion {
 
 }
 
 
-```html
+```
