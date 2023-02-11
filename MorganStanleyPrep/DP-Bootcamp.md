@@ -45,4 +45,52 @@ You are present at point ‘A’ which is the top-left cell of an M X N matrix, 
 To traverse in the matrix, you can either move Right or Down at each step. For example in a given point MATRIX[i] [j], you can move to either MATRIX[i + 1][j] or MATRIX[i][j + 1].
 
 
+We use a 2-D list of size M X N and two indices. We start from the position (M-1,N-1) and move either up or left. The formula for moving up or left is
+```
+dp[i][j]  = dp[i][j] + dp[i-1][j] (For moving up)
+dp[i][j]  = dp[i][j] + dp[i][j-1] (For moving left)
+```
+
+```python3
+# def uniquePathsRec(i,j):
+    
+#     if i == 1 and j == 1:
+#         return 1 
+#     if i < 0 or j < 0:
+#         return 0
+    
+#     up, left = 0, 0
+    
+#     up = uniquePaths(i-1,j)
+#     left = uniquePaths(i,j-1)
+            
+#     return up + left
+    
+# print(uniquePathsRec(7,8))
+
+
+def uniquePathsDP(M,N):
+    dp = [[0 for a in range(M+1)] for b in range(N+1)]
+    
+    dp[0][0] = 1
+    
+    
+        
+    up = 0
+    left = 0
+    
+    for i in range(M):
+        for j in range(N):
+            dp[i][j] += dp[i-1][j]
+            dp[i][j] += dp[i][j-1]
+    
+    return dp[M-1][N-1]
+    
+print(uniquePathsDP(7,8))
+```
+
+
+
+
+
         
