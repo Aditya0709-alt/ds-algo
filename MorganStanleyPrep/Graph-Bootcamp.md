@@ -34,4 +34,32 @@ class Graph:
                 visited[i] = True       
 ```
 
+## Depth-First Search
+
+- Depth-first search (DFS) is a graph traversal algorithm used for searching or exploring all the vertices of a graph or a tree data structure in a depth-wise manner. 
+- Unlike breadth-first search (BFS), which explores all vertices at a given level before going deeper, DFS visits a vertex and then explores as far as possible along each branch before backtracking.
+- The algorithm starts at the root node and visits the first child node of that vertex. It continues to visit child nodes as far down the tree as possible before backtracking and visiting other siblings. This process is repeated until all vertices have been visited.
+
+
+
+
+```python3
+
+def DFSHelper(s, visited):
+        visited.add(s)
+        print(s, end=" ")
+        
+        for i in self.graph[s]:
+            if i not in visited:
+                self.DFSHelper(i,visited)
+    
+    def DFS(s):
+        
+        visited = set()
+        
+        self.DFSUtil(s, visited)
+   
+```
+
+
 
