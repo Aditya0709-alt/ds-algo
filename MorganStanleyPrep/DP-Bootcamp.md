@@ -89,8 +89,38 @@ def uniquePathsDP(M,N):
 print(uniquePathsDP(7,8))
 ```
 
+## Unique Paths with Obstacles
 
 
+```python3 
+def uniquePathsRec(i,j, grid, dp):
+    
+    if i > 0 and j > 0 and grid[i][j] == -1:
+        return 0
+    if i == 1 and j == 1:
+        return 1 
+    if i < 0 or j < 0:
+        return 0
+    if dp[i][j] == -1:
+        return dp[i][j]
+    
+    up, left = 0, 0
+    
+    up = uniquePathsRec(i-1,j, grid,dp)
+    left = uniquePathsRec(i,j-1,grid,dp)
+            
+    dp[i][j] = up + left
+    
+    return dp[i][j]
+    
+def uniquePaths(n,m,grid):
+    dp = [[-1 for j in range(m)] for i in range(n)]
+    return uniquePathsRec(n-1, m-1, grid, dp)
+
+grid = [[0,0,0],[0,-1,0],[0,0,0]]
+n = len(grid)
+m = len(grid[0])
+```
 
 
         
