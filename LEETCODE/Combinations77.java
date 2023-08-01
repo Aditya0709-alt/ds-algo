@@ -28,5 +28,4 @@ class Solution {
     }
 }
 
-![IMG_CD78E5DCC555-1](https://github.com/Aditya0709-alt/stegano-master/assets/77115883/5c257034-fb84-4f01-a187-5a05e94a8a66)
 
