@@ -4,8 +4,6 @@ The approach used is backatracking. We add an element to the temp array and use 
 
 // Backtracking Tree
 
-![IMG_CD78E5DCC555-1](https://github.com/Aditya0709-alt/stegano-master/assets/77115883/5c257034-fb84-4f01-a187-5a05e94a8a66)
-
 
 class Solution {
     
@@ -29,3 +27,6 @@ class Solution {
         return output;
     }
 }
+
+![IMG_CD78E5DCC555-1](https://github.com/Aditya0709-alt/stegano-master/assets/77115883/5c257034-fb84-4f01-a187-5a05e94a8a66)
+
